@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_account"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/custom_background_infouser"
+            android:orientation="vertical"
+            android:paddingTop="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearThongTin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/SizeHint">
+
+                        <EditText
+                            android:id="@+id/edtFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Full Name"
+                            android:text="Full Name"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/SizeHint">
+
+                        <EditText
+                            android:id="@+id/edtUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Url"
+                            android:text="Url"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnLuu"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/custom_button"
+                            android:text="Cập nhật" />
+
+                        <Button
+                            android:id="@+id/btnHuy"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_button"
+                            android:text="Huỷ" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_circle_icon"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHinhSV"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_menu_register"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_back" />
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

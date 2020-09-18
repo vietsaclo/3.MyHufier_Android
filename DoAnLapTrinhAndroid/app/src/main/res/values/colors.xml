@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#874FEC</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorSecondary">#F3F3F3</color>
+
+    <color name="colorPrimaryNight">#404040</color>
+    <color name="colorPrimaryDarkNight">#F2F3F2</color>
+    <color name="colorAccentNight">#EFEFEF</color>
+    <color name="colorSecondaryNight">#404040</color>
+</resources>
